@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 730933044}
   - component: {fileID: 730933043}
   - component: {fileID: 730933048}
+  - component: {fileID: 730933049}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -361,12 +362,38 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.031435836, y: 0}
   serializedVersion: 2
   m_Radius: 6.4946494
+--- !u!61 &730933049
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730933042}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0142689645, y: 0.47646263}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2283058, y: 0.22937363}
+  m_EdgeRadius: 0
 --- !u!1 &809546737
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 809546739}
   speed: 400
-  jumpHeight: 400
+  jumpHeight: 524
 --- !u!1 &865075188
 GameObject:
   m_ObjectHideFlags: 0
